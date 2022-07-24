@@ -214,9 +214,9 @@ Por último uma demonstração da previsão total de vendas:
     
 | Scenario | Values |
 |----------|--------|
-| predictions | R$284,608,704.00 |
-| worst_scenario | R$283,854,989.77 |
-| best_scenario | R$285,362,431.34 |
+| predictions | $284,608,704.00 |
+| worst_scenario | $283,854,989.77 |
+| best_scenario | $285,362,431.34 |
 
 # 7. Modelo em produção
     
