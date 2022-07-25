@@ -192,31 +192,31 @@ Os dois últimos gráficos permitem compreender a distribuição de erros e de p
     
 Para expressar os resultados de negócio busco descrever as flutuações de cada previsão, ao analisar o erro relativo de cada previsão por loja é possível a tomada de decisão com base no valor previsto, no melhor valor ou no pior valor.
     
-| store	| predictions	| worst_scenario | best_scenario | MAE | MAPE |
+| store	| predictions | worst_scenario | best_scenario | MAE | MAPE |
 |-------|-------------|----------------|---------------|-----|------|
-| 667	| 320692.41	| 320276.23 | 321108.59 | 416.18 | 0.05 |
-| 259	| 544712.19	| 544073.51	| 545350.87	| 638.68 | 0.05 |
-| 1097 | 453320.72 | 452765.12 | 453876.31 | 555.59	| 0.05 |
-| 1089 | 392789.03 | 392258.11 | 393319.95 | 530.92	| 0.05 |
-| 817 | 757912.50 | 756833.20 | 758991.80 | 1079.30 | 0.05 |
+| 667 | 320692.41 | 304913.43 | 336471.38 | 416.18 | 0.05 |
+| 259 | 544712.19 | 516710.39 | 572713.99 | 638.68 | 0.05 |
+| 1097 | 453320.72 | 429811.86 | 476829.57 | 555.59 | 0.05 |
+| 1089 | 392789.03 | 372404.89 | 413173.17 | 530.92 | 0.05 |
+| 817 | 757912.50 | 718395.57 | 797429.43 | 1079.30 | 0.05 |
     
 É importante destacar que existem algumas previsões com alto grau de incerteza, o que não resulta em um bom apoio para a tomada de decisão, alguns exemplos de stores com grandes taxas de erros são:
     
 | store	| predictions	| worst_scenario | best_scenario | MAE | MAPE |
 |-------|-------------|----------------|---------------|-----|------|
-|292 | 105338.44 | 102110.13 | 108566.75 | 3228.31 | 0.55 |
-|909 | 244446.17 | 236786.48 | 252105.86 | 7659.69 | 0.53 |
-|183 | 217548.39 | 215626.55 | 219470.23 | 1921.84 | 0.33 |
-|876 | 203445.88 | 199463.56 | 207428.19 | 3982.31 | 0.29 |
-|722 | 354224.81 | 352199.71 | 356249.92 | 2025.10 | 0.27 |
+|292 | 105338.44 | 47904.11 | 162772.77 | 3228.31 | 0.55
+|909 | 244446.17 | 116010.35 | 372882.00 | 7659.69 | 0.53
+|183 | 217548.39 | 144879.74 | 290217.04 | 1921.84 | 0.33
+|876 | 203445.88 | 143564.70 | 263327.05 | 3982.31 | 0.29
+|722 | 354224.81 | 257524.14 | 450925.48 | 2025.10 | 0.27
     
 Por último uma demonstração da previsão total de vendas:
     
 | Scenario | Values |
 |----------|--------|
-| predictions | $284,608,704.00 |
-| worst_scenario | $283,854,989.77 |
-| best_scenario | $285,362,431.34 |
+| predictions | $ 284,608,704.00 |
+| worst_scenario | $ 256,898,481.33 |
+| best_scenario | $ 312,318,939.78 |
 
 # 7. Modelo em produção
     
